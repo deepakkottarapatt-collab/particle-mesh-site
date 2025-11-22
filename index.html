@@ -24,7 +24,6 @@
 
     body{scroll-behavior:smooth;}
 
-    /* Fullscreen canvas behind all content */
     canvas#c{
       position:fixed;
       inset:0;
@@ -35,7 +34,6 @@
       pointer-events:none;
     }
 
-    /* HERO / PAGE 1 */
     .hero{
       position:relative;
       z-index:1;
@@ -91,7 +89,6 @@
       50%{transform:translate(-50%,-6px);opacity:1;}
     }
 
-    /* CV / PAGE 2 */
     #cv-section{
       position:relative;
       z-index:1;
@@ -118,6 +115,7 @@
       border-bottom:1px solid var(--border-soft);
       padding-bottom:1.4rem;
       margin-bottom:1.8rem;
+      justify-content:space-between; /* ADDED */
     }
 
     .cv-name-block{flex:1 1 260px;}
@@ -142,6 +140,8 @@
       font-size:0.85rem;
       line-height:1.6;
       opacity:0.9;
+      margin-left:auto;  /* ADDED */
+      text-align:right;  /* ADDED */
     }
 
     .cv-contact a{
@@ -216,12 +216,12 @@
   </style>
 </head>
 <body>
-  <!-- HERO / PAGE 1 -->
+
   <section class="hero">
     <canvas id="c"></canvas>
     <div class="hero-inner">
       <div class="hero-title">DEEPAK&nbsp;SASIPAL</div>
-      <div class="hero-sub">Architect · BIM Specialist</div>
+      <div class="hero-sub">Architect · BIM Specialist · AI Enthusiast</div>
     </div>
     <div class="scroll-indicator">
       <div>SCROLL TO VIEW CV</div>
@@ -229,7 +229,6 @@
     </div>
   </section>
 
-  <!-- CV / PAGE 2 -->
   <section id="cv-section">
     <div class="cv-panel">
       <header class="cv-header">
@@ -238,7 +237,6 @@
           <div class="cv-role">Architect · BIM Specialist</div>
         </div>
         <div class="cv-contact">
-          <ul class="cv-list">
           <div>📞 +91 884 84 71 912</div>
           <div>📧 <a href="mailto:deepak.kottarapatt@gmail.com">deepak.kottarapatt@gmail.com</a></div>
           <div>📧 <a href="mailto:sasipaldeepak@gmail.com">sasipaldeepak@gmail.com</a></div>
@@ -253,38 +251,25 @@
 
       <div class="cv-grid">
         <div>
-          <!-- Profile + Key Skills -->
           <section class="cv-section-block">
             <h3 class="cv-section-title">Profile</h3>
             <p class="cv-body-text">
-              Architect &amp; BIM Specialist with hands-on expertise in Autodesk tools including Revit
+              Architect & BIM Specialist with hands-on expertise in Autodesk tools including Revit
               (Architecture – Certified), Navisworks, BIM 360, BIM Docs, and Autodesk Construction Cloud.
               I bring 4 years of experience delivering complex industrial, commercial, and residential
               projects using BIM-centric workflows.
             </p>
             <p class="cv-body-text" style="margin-top:0.6rem;">
               Currently serving as <strong>Architect at Khatib and Alami, Bangalore</strong>. I am comfortable
-              coordinating across disciplines, resolving issues collaboratively, and taking ownership of
-              deliverables with minimal supervision.
+              coordinating across disciplines and taking ownership of deliverables with minimal supervision.
             </p>
-            <div class="cv-section-block" style="margin-top:1rem;">
-              <h4 class="cv-section-title" style="font-size:0.8rem;letter-spacing:0.2em;">Key Skills</h4>
-              <ul class="cv-list">
-                <li>Strong grasp of architectural design principles and construction methodologies.</li>
-                <li>Workflow optimisation and BIM coordination across multidisciplinary teams.</li>
-                <li>Clear communication and problem-solving for effective collaboration.</li>
-                <li>Curious and calm under pressure, always open to learning and improvement.</li>
-                <li>Proactive in handling issues via discussion and collaboration, limiting escalation.</li>
-              </ul>
-            </div>
           </section>
 
-          <!-- Education -->
           <section class="cv-section-block">
             <h3 class="cv-section-title">Education</h3>
             <ul class="cv-list">
               <li>
-                <strong>Indian Institute of Engineering Science &amp; Technology, Shibpur</strong><br>
+                <strong>Indian Institute of Engineering Science & Technology, Shibpur</strong><br>
                 B.Arch · 2017 – 2022 · National Rank #4 (Architecture)
               </li>
               <li>
@@ -294,41 +279,37 @@
             </ul>
           </section>
 
-          <!-- Present Job Profile -->
           <section class="cv-section-block">
             <h3 class="cv-section-title">Present Job Profile</h3>
             <ul class="cv-list">
               <li>
-                <strong>Architect – Khatib &amp; Alami</strong>, Bangalore<br>
-                At Khatib and Alami, I lead interdisciplinary coordination and design development for Majid Al Futtaim’s Ghaf Woods Package 12 – Podium Levels. 
-                My role involves presenting key technical design solutions aligned with client specifications and project timelines. 
-                Successfully introduced BIM coordination strategies that streamlined production workflows. I also handle real-time Revit design changes during client meetings,
-                ensuring an accurate understanding of client requirements and translating them into efficient, feasible design solutions.
+                <strong>Architect – Khatib & Alami</strong>, Bangalore<br>
+                Leading interdisciplinary coordination and design development for Majid Al Futtaim’s Ghaf Woods
+                Package 12 – Podium Levels. Presenting design solutions, implementing BIM workflows, and delivering
+                real-time Revit design updates during client meetings.
               </li>
             </ul>
           </section>
 
-          <!-- Achievements -->
           <section class="cv-section-block">
             <h3 class="cv-section-title">Achievements</h3>
             <ul class="cv-list">
-              <li>Annual National Design Competition by NASA India – Top 40 entries.</li>
-              <li>Captained the winning school football team in a state-level tournament.</li>
-              <li>NASA National Convention – Runner up 2018.</li>
-              <li>SIP Abacus Master</li>
+              <li>NASA India Annual Design Competition – Top 40 entries.</li>
+              <li>Captain – Winning team at state-level football tournament.</li>
+              <li>NASA National Convention – Runner-up (2018).</li>
+              <li>SIP Abacus Master.</li>
             </ul>
           </section>
         </div>
 
-        <!-- RIGHT COLUMN -->
         <div>
           <section class="cv-section-block">
             <h3 class="cv-section-title">Certifications</h3>
             <ul class="cv-list">
               <li>Revit Certified User – Autodesk</li>
               <li>Autodesk Consulting Implementation Framework – Accredited</li>
-              <li>Dynamo (Buildings) Accelerator Delivery Training – Autodesk</li>
-              <li>Project Management Capability Building – Autodesk</li>
+              <li>Dynamo (Buildings) Accelerator Training – Autodesk</li>
+              <li>Project Management Capability Training – Autodesk</li>
             </ul>
           </section>
 
@@ -344,6 +325,7 @@
                 <span class="cv-tag">BIM Collaborate Pro</span>
               </div>
             </div>
+
             <div class="cv-body-text" style="margin-top:0.8rem;">
               <strong>Rendering / Visualization</strong>
               <div class="cv-tag-list">
@@ -353,8 +335,9 @@
                 <span class="cv-tag">EyeCad VR</span>
               </div>
             </div>
+
             <div class="cv-body-text" style="margin-top:0.8rem;">
-              <strong>Presentation &amp; Workflow</strong>
+              <strong>Presentation & Workflow</strong>
               <div class="cv-tag-list">
                 <span class="cv-tag">Power BI</span>
                 <span class="cv-tag">Speckle</span>
@@ -386,7 +369,6 @@
   </section>
 
   <script>
-    // ===== Particle system (Checkpoint 1 style, always on) =====
     const canvas = document.getElementById('c');
     const ctx = canvas.getContext('2d');
 
@@ -453,7 +435,6 @@
       update(){
         this.vx *= 0.995;
         this.vy *= 0.995;
-
         this.vx += rand(-0.01,0.01);
         this.vy += rand(-0.01,0.01);
 
@@ -525,9 +506,6 @@
 
     loop();
   </script>
+
 </body>
 </html>
-
-
-
-
